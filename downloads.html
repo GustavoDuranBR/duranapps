@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Downloads - Gustavo Duran</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Downloads</h1>
+  <header class="hero" data-aos="fade-down">
+    <h1><i class="fa-solid fa-terminal"></i> Gustavo Duran</h1>
+    <p>Desenvolvedor de utilitários desktop com foco em produtividade e automação</p>
     <nav>
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="downloads.html">Downloads</a>
+      <a href="index.html"><i class="fa-solid fa-house"></i> Início</a>
+      <a href="quem-somos.html"><i class="fa-solid fa-user"></i> Quem Somos</a>
+      <a href="downloads.html"><i class="fa-solid fa-download"></i> Downloads</a>
     </nav>
   </header>
-  <main>
-    <section>
-      <ul>
-        <li><a href="downloads/Instalar%20FileReplacer.exe" download>Baixar FileReplacer</a></li>
-        <li><a href="downloads/FileWizard.exe" download>Baixar FileWizard</a></li>
-      </ul>
+
+  <main class="container">
+    <section class="section" data-aos="fade-up">
+      <h2><i class="fa-solid fa-box-open"></i> Downloads Disponíveis</h2>
+      <div class="downloads-list">
+        <a class="download-btn" href="downloads/Instalar%20FileReplacer.exe" download>
+          <i class="fa-solid fa-file-arrow-down"></i> FileReplacer
+        </a>
+        <a class="download-btn" href="downloads/FileWizard.exe" download>
+          <i class="fa-solid fa-wand-magic-sparkles"></i> FileWizard
+        </a>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Gustavo Duran</p>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Gustavo Duran - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
