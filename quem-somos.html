@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quem Somos - Gustavo Duran</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Quem Somos</h1>
+  <header class="hero" data-aos="fade-down">
+    <h1><i class="fa-solid fa-terminal"></i> Gustavo Duran</h1>
+    <p>Desenvolvedor de utilitários desktop com foco em produtividade e automação</p>
     <nav>
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="downloads.html">Downloads</a>
+      <a href="index.html"><i class="fa-solid fa-house"></i> Início</a>
+      <a href="quem-somos.html"><i class="fa-solid fa-user"></i> Quem Somos</a>
+      <a href="downloads.html"><i class="fa-solid fa-download"></i> Downloads</a>
     </nav>
   </header>
-  <main>
-    <section>
-      <p>Sou Gustavo Duran, desenvolvedor Python e criador de utilitários desktop. Meu objetivo é compartilhar ferramentas simples e úteis com a comunidade.</p>
+
+  <main class="container">
+    <section class="section" data-aos="fade-up">
+      <h2><i class="fa-solid fa-user-astronaut"></i> Quem Somos</h2>
+      <p>Sou Gustavo Duran, QA e desenvolvedor Python apaixonado por tecnologia, automação e criação de soluções úteis. Tento simplificar tarefas do dia a dia com programas de fácil uso e visual moderno, compartilhando tudo com a comunidade.</p>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Gustavo Duran</p>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Gustavo Duran - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
