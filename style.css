@@ -1,233 +1,286 @@
 /* ===============================
+VARIÁVEIS DE COR
+================================ */
+
+:root{
+--bg-main:#121212;
+--bg-card:#1b1b1b;
+--bg-card-dark:#111;
+--bg-section:#1f1f1f;
+
+--primary:#00e676;
+--primary-hover:#00c853;
+
+--text-main:#f4f4f4;
+--text-secondary:#cfcfcf;
+--text-muted:#aaa;
+
+--border:#2a2a2a;
+}
+
+/* ===============================
 RESET BÁSICO
 ================================ */
 
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #121212;
-    color: #f4f4f4;
-    line-height: 1.6;
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:'Roboto',sans-serif;
+background-color:var(--bg-main);
+color:var(--text-main);
+line-height:1.6;
 }
 
 /* ===============================
 HERO / HEADER
 ================================ */
 
-.hero {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    padding: 35px 20px;
-    text-align: center;
-    color: #fff;
+.hero{
+background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+padding:40px 20px;
+text-align:center;
+color:#fff;
 }
 
-.hero h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.6rem;
-    margin: 0;
+.hero h1{
+font-family:'Orbitron',sans-serif;
+font-size:2.6rem;
+margin:0;
+letter-spacing:1px;
 }
 
-.hero p {
-    margin-top: 8px;
-    color: #ddd;
+.hero p{
+margin-top:10px;
+color:#ddd;
+font-size:0.95rem;
 }
 
-.hero nav {
-    margin-top: 18px;
+.hero nav{
+margin-top:20px;
 }
 
 /* ===============================
-LINKS DO MENU
+MENU
 ================================ */
 
-.hero nav a {
-    margin: 0 12px;
-    text-decoration: none;
-    color: #f4f4f4;
-    font-weight: bold;
-    position: relative;
-    transition: color 0.3s;
+.hero nav a{
+margin:0 14px;
+text-decoration:none;
+color:#f4f4f4;
+font-weight:600;
+position:relative;
+transition:color .3s;
 }
 
-.hero nav a:hover {
-    color: #00e676;
+.hero nav a:hover{
+color:var(--primary);
 }
 
-/* linha animada abaixo do menu */
+/* underline animado */
 
-.hero nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 2px;
-    background: #00e676;
-    transition: width 0.3s;
+.hero nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-4px;
+width:0%;
+height:2px;
+background:var(--primary);
+transition:width .3s;
 }
 
-.hero nav a:hover::after {
-    width: 100%;
+.hero nav a:hover::after{
+width:100%;
 }
 
 /* ===============================
 CONTAINER
 ================================ */
 
-.container {
-    padding: 40px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
+.container{
+padding:45px 20px;
+max-width:1100px;
+margin:auto;
 }
 
 /* ===============================
 SEÇÕES
 ================================ */
 
-.section {
-    margin-bottom: 45px;
+.section{
+margin-bottom:50px;
 }
 
-.section h2 {
-    font-family: 'Orbitron', sans-serif;
-    color: #00e676;
-    margin-bottom: 12px;
+.section h2{
+font-family:'Orbitron',sans-serif;
+color:var(--primary);
+margin-bottom:14px;
 }
 
 /* seção destaque */
 
-.section.dark {
-    background: linear-gradient(145deg, #1f1f1f, #171717);
-    padding: 28px;
-    border-radius: 10px;
-    border: 1px solid #2a2a2a;
+.section.dark{
+background:linear-gradient(145deg,#1f1f1f,#171717);
+padding:30px;
+border-radius:12px;
+border:1px solid var(--border);
 }
 
 /* ===============================
 GRID DE APLICATIVOS
 ================================ */
 
-.apps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 28px;
-    margin-top: 25px;
+.apps-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+gap:28px;
+margin-top:25px;
 }
 
 /* ===============================
 CARD DO APP
 ================================ */
 
-.app-card {
-    background: linear-gradient(145deg, #1b1b1b, #111);
-    border-radius: 12px;
-    padding: 28px;
-    text-align: center;
-    border: 1px solid #2a2a2a;
-    transition: all 0.25s ease;
+.app-card{
+background:linear-gradient(145deg,var(--bg-card),var(--bg-card-dark));
+border-radius:12px;
+padding:28px;
+text-align:center;
+border:1px solid var(--border);
+transition:all .25s ease;
 }
 
-.app-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+.app-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.6);
+border-color:#3a3a3a;
 }
 
-.app-card h3 {
-    margin-top: 10px;
-    margin-bottom: 12px;
-    font-size: 1.4rem;
+.app-card h3{
+margin-top:10px;
+margin-bottom:12px;
+font-size:1.35rem;
 }
 
-.app-card p {
-    font-size: 0.92rem;
-    color: #cfcfcf;
-    margin-bottom: 24px;
+.app-card p{
+font-size:.92rem;
+color:var(--text-secondary);
+margin-bottom:24px;
+}
+
+/* ícone dos apps */
+
+.app-card i{
+color:var(--primary);
+margin-right:6px;
 }
 
 /* ===============================
 BADGE DE VERSÃO
 ================================ */
 
-.version-badge {
-    display: inline-block;
-    background: #00e676;
-    color: #000;
-    font-size: 0.75rem;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-weight: bold;
-    margin-bottom: 8px;
+.version-badge{
+display:inline-block;
+background:var(--primary);
+color:#000;
+font-size:.72rem;
+padding:5px 10px;
+border-radius:6px;
+font-weight:700;
+margin-bottom:8px;
 }
 
 /* ===============================
-BOTÃO DOWNLOAD
+BOTÕES
 ================================ */
 
-.download-btn {
-    display: block;
-    background: #00e676;
-    color: #000;
-    padding: 12px 18px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.25s ease;
+.download-btn{
+display:block;
+background:var(--primary);
+color:#000;
+padding:12px 18px;
+border-radius:8px;
+font-weight:600;
+text-decoration:none;
+transition:all .25s ease;
 }
 
-.download-btn i {
-    margin-right: 8px;
+.download-btn i{
+margin-right:8px;
 }
 
-.download-btn:hover {
-    background: #00c853;
-    transform: scale(1.03);
+.download-btn:hover{
+background:var(--primary-hover);
+transform:scale(1.03);
+box-shadow:0 4px 15px rgba(0,0,0,.4);
 }
 
 /* ===============================
-LISTA DOWNLOAD ANTIGA
+LISTA DOWNLOAD (LEGADO)
 ================================ */
 
-.downloads-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+.downloads-list{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+/* ===============================
+IMAGENS (para screenshots futuras)
+================================ */
+
+.section img{
+max-width:100%;
+border-radius:10px;
+margin-top:15px;
 }
 
 /* ===============================
 FOOTER
 ================================ */
 
-footer {
-    background-color: #1a1a1a;
-    color: #aaa;
-    text-align: center;
-    padding: 18px 10px;
-    font-size: 0.9rem;
-    margin-top: 50px;
-    border-top: 1px solid #2a2a2a;
+footer{
+background:#1a1a1a;
+color:var(--text-muted);
+text-align:center;
+padding:20px 10px;
+font-size:.9rem;
+margin-top:60px;
+border-top:1px solid var(--border);
 }
 
 /* ===============================
 RESPONSIVO
 ================================ */
 
-@media (max-width:768px) {
+@media (max-width:768px){
 
-    .hero h1 {
-        font-size: 2.1rem;
-    }
+.hero h1{
+font-size:2.1rem;
+}
 
-    .container {
-        padding: 30px 18px;
-    }
+.hero p{
+font-size:.9rem;
+}
 
-    .apps-grid {
-        grid-template-columns: 1fr;
-    }
+.container{
+padding:35px 18px;
+}
 
-    .app-card {
-        padding: 24px;
-    }
+.apps-grid{
+grid-template-columns:1fr;
+}
+
+.app-card{
+padding:24px;
+}
+
+.download-btn{
+font-size:.9rem;
+}
 
 }
