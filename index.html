@@ -1,54 +1,40 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gustavo Duran - Utilitários</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="hero" data-aos="fade-down">
-    <h1><i class="fa-solid fa-terminal"></i> Gustavo Duran</h1>
-    <p>Desenvolvedor de utilitários desktop com foco em produtividade e automação</p>
-    <nav>
-      <a href="index.html"><i class="fa-solid fa-house"></i> Início</a>
-      <a href="quem-somos.html"><i class="fa-solid fa-user"></i> Quem Somos</a>
-      <a href="downloads.html"><i class="fa-solid fa-download"></i> Downloads</a>
-    </nav>
-  </header>
+<section class="section" data-aos="fade-up">
+  <h2><i class="fa-solid fa-rocket"></i> Aplicativos</h2>
 
-  <main class="container">
-    <section class="section" data-aos="fade-up">
-      <h2><i class="fa-solid fa-gamepad"></i> Sobre Mim</h2>
-      <p>Sou Gustavo Duran, um entusiasta por tecnologia e automação. Desenvolvo utilitários em Python voltados para usuários do Windows, buscando facilitar tarefas rotineiras com ferramentas práticas e funcionais. Compartilho meus projetos com a comunidade como forma de contribuir e aprender continuamente.</p>
-    </section>
+  <div class="apps-grid">
 
-    <section class="section dark" data-aos="fade-up">
-      <h2><i class="fa-solid fa-star"></i> Destaques</h2>
-      <p>Utilitários modernos, intuitivos e criados pensando na sua produtividade. Experimente agora mesmo!</p>
-    </section>
+    <div class="app-card">
+      <h3>⚖ Sistema Jurídico</h3>
+      <p>Gerenciamento de clientes e processos para escritórios jurídicos.</p>
 
-    <section class="section" data-aos="fade-up">
-      <h2><i class="fa-solid fa-download"></i> Downloads</h2>
-      <div class="downloads-list">
-        <a class="download-btn" href="downloads/Instalar%20FileReplacer.exe" download>
-          <i class="fa-solid fa-file-arrow-down"></i> FileReplacer
-        </a>
-        <a class="download-btn" href="downloads/FileWizard.exe" download>
-          <i class="fa-solid fa-wand-magic-sparkles"></i> FileWizard
-        </a>
-      </div>
-    </section>
-  </main>
+      <a class="download-btn"
+      href="apps/sistema-juridico/Instalador_SistemaJuridico.exe">
+      <i class="fa-solid fa-download"></i>
+      Baixar
+      </a>
+    </div>
 
-  <footer data-aos="fade-up">
-    <p>&copy; 2025 Gustavo Duran - Todos os direitos reservados.</p>
-  </footer>
+    <div class="app-card">
+      <h3>🔄 FileReplacer</h3>
+      <p>Substituição rápida de arquivos em massa.</p>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-</body>
-</html>
+      <a class="download-btn"
+      href="apps/file-replacer/FileReplacer.exe">
+      <i class="fa-solid fa-download"></i>
+      Baixar
+      </a>
+    </div>
+
+    <div class="app-card">
+      <h3>✨ FileWizard</h3>
+      <p>Ferramenta para manipulação inteligente de arquivos.</p>
+
+      <a class="download-btn"
+      href="apps/file-wizard/FileWizard.exe">
+      <i class="fa-solid fa-download"></i>
+      Baixar
+      </a>
+    </div>
+
+  </div>
+</section>
