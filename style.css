@@ -90,3 +90,95 @@ footer {
   font-size: 0.9rem;
   margin-top: 40px;
 }
+
+/* ===== GRID DE APLICATIVOS ===== */
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* ===== CARD DO APP ===== */
+
+.app-card {
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #2b2b2b;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.app-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.app-card p {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+/* ===== BOTÃO DE DOWNLOAD ===== */
+
+.app-card .download-btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== BADGE DE VERSÃO ===== */
+
+.version-badge {
+  display: inline-block;
+  background: #00e676;
+  color: #000;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* ===== ANIMAÇÃO DE HOVER NOS LINKS ===== */
+
+.hero nav a {
+  position: relative;
+}
+
+.hero nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #00e676;
+  transition: width 0.3s;
+}
+
+.hero nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 600px) {
+
+.hero h1{
+font-size:2rem;
+}
+
+.container{
+padding:20px 15px;
+}
+
+}
+
