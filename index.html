@@ -1,40 +1,162 @@
-<section class="section" data-aos="fade-up">
-  <h2><i class="fa-solid fa-rocket"></i> Aplicativos</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-  <div class="apps-grid">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="app-card">
-      <h3>⚖ Sistema Jurídico</h3>
-      <p>Gerenciamento de clientes e processos para escritórios jurídicos.</p>
+    <title>Gustavo Duran Apps</title>
 
-      <a class="download-btn"
-      href="apps/sistema-juridico/Instalador_SistemaJuridico.exe">
-      <i class="fa-solid fa-download"></i>
-      Baixar
-      </a>
-    </div>
+    <link rel="stylesheet" href="style.css">
 
-    <div class="app-card">
-      <h3>🔄 FileReplacer</h3>
-      <p>Substituição rápida de arquivos em massa.</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
 
-      <a class="download-btn"
-      href="apps/file-replacer/FileReplacer.exe">
-      <i class="fa-solid fa-download"></i>
-      Baixar
-      </a>
-    </div>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <div class="app-card">
-      <h3>✨ FileWizard</h3>
-      <p>Ferramenta para manipulação inteligente de arquivos.</p>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 
-      <a class="download-btn"
-      href="apps/file-wizard/FileWizard.exe">
-      <i class="fa-solid fa-download"></i>
-      Baixar
-      </a>
-    </div>
+</head>
 
-  </div>
-</section>
+<body>
+
+    <header class="hero" data-aos="fade-down">
+
+        <h1><i class="fa-solid fa-terminal"></i> Duran Apps</h1>
+
+        <p>Utilitários Windows focados em produtividade e automação</p>
+
+        <nav>
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i> Início
+            </a>
+
+            <a href="quem-somos.html">
+                <i class="fa-solid fa-user"></i> Quem Somos
+            </a>
+
+            <a href="#apps">
+                <i class="fa-solid fa-download"></i> Aplicativos
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main class="container">
+
+        <section class="section" data-aos="fade-up">
+
+            <h2><i class="fa-solid fa-code"></i> Sobre</h2>
+
+            <p>
+                Sou Gustavo Duran, desenvolvedor focado em automação e ferramentas de produtividade para Windows.
+                Crio utilitários em Python pensados para simplificar tarefas do dia a dia e aumentar eficiência.
+            </p>
+
+        </section>
+
+        <section class="section dark" data-aos="fade-up">
+
+            <h2><i class="fa-solid fa-rocket"></i> Aplicativos</h2>
+
+            <p>Baixe abaixo os utilitários disponíveis.</p>
+
+        </section>
+
+        <section id="apps" class="section" data-aos="fade-up">
+
+            <div class="apps-grid">
+
+                <!-- SISTEMA JURIDICO -->
+
+                <div class="app-card">
+
+                    <span class="version-badge">v2.1.0</span>
+
+                    <h3>⚖ Sistema Jurídico</h3>
+
+                    <p>
+                        Sistema desktop para gerenciamento de clientes
+                        e processos jurídicos.
+                    </p>
+
+                    <a class="download-btn" href="apps/sistema-juridico/Instalador_SistemaJuridico.exe">
+
+                        <i class="fa-solid fa-download"></i>
+                        Baixar
+
+                    </a>
+
+                </div>
+
+                <!-- FILEREPLACER -->
+
+                <div class="app-card">
+
+                    <span class="version-badge">v1.0</span>
+
+                    <h3>🔄 FileReplacer</h3>
+
+                    <p>
+                        Substituição rápida de arquivos em massa.
+                        Ideal para automações e manutenção.
+                    </p>
+
+                    <a class="download-btn" href="apps/file-replacer/FileReplacer.exe">
+
+                        <i class="fa-solid fa-download"></i>
+                        Baixar
+
+                    </a>
+
+                </div>
+
+                <!-- FILEWIZARD -->
+
+                <div class="app-card">
+
+                    <span class="version-badge">v1.0</span>
+
+                    <h3>✨ FileWizard</h3>
+
+                    <p>
+                        Ferramenta inteligente para manipulação
+                        e organização de arquivos.
+                    </p>
+
+                    <a class="download-btn" href="apps/file-wizard/FileWizard.exe">
+
+                        <i class="fa-solid fa-download"></i>
+                        Baixar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer data-aos="fade-up">
+
+        <p>
+            © 2026 Gustavo Duran — Todos os direitos reservados
+        </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800
+        });
+    </script>
+
+</body>
+
+</html>
