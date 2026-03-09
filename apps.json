@@ -1,0 +1,38 @@
+[
+  {
+    "id": "juridico",
+    "titulo": "Sistema Jurídico",
+    "icone": "fa-scale-balanced",
+    "versao": "v2.1.0",
+    "descricao": "Gestão de clientes e processos com acesso mobile pela rede do escritório.",
+    "detalhes_url": "sistema-juridico.html",
+    "download_url": "https://github.com/GustavoDuranBR/duranapps/releases/download/v1.0.0/Instalador_SistemaJuridico.exe"
+  },
+  {
+    "id": "pytubepro",
+    "titulo": "PyTubePRO",
+    "icone": "fa-download",
+    "versao": "v1.0",
+    "descricao": "Poderoso downloader de vídeos e áudios do YouTube. Suporta 4K e MP3.",
+    "detalhes_url": "pytubepro.html",
+    "download_url": "https://github.com/GustavoDuranBR/duranapps/releases/download/v1.0.0/PyTubePRO_Setup.exe"
+  },
+  {
+    "id": "filewizard",
+    "titulo": "FileWizard",
+    "icone": "fa-circle-info",
+    "versao": "v1.0",
+    "descricao": "Utilitário para organização inteligente de arquivos baseado em critérios como extensão ou parte do nome, facilitando a estruturação automática de diretórios.",
+    "detalhes_url": "filewizard.html",
+    "download_url": "https://github.com/GustavoDuranBR/duranapps/releases/download/v1.0.0/FileWizard.exe"
+  },
+  {
+    "id": "filereplacer",
+    "titulo": "FileReplacer",
+    "icone": "fa-circle-info",
+    "versao": "v1.0",
+    "descricao": "Ferramenta desenvolvida para substituir ou distribuir arquivos automaticamente em múltiplas pastas, agilizando tarefas de manutenção e atualização de projetos.",
+    "detalhes_url": "filereplacer.html",
+    "download_url": "https://github.com/GustavoDuranBR/duranapps/releases/download/v1.0.0/Instalar.FileReplacer.exe"
+  }
+]
