@@ -38,4 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(err => console.error("Erro ao carregar apps.json: ", err));
     }
+
+    // 4. Sistema de Download Dinâmico (para as páginas individuais de cada aplicativo)
+    const btnDownload = document.getElementById("btn-download-dinamico");
+    if (btnDownload) {
+        const appId = btnDownload.getAttribute("data-app-id");
+
+        fetch("apps.json")
+            .then(response => response.json())
+            .then(apps => {
+                // Procura o aplicativo correto pelo ID
+                const app = apps.find(a => a.id === appId);
+                if (app && app.download_url) {
+                    // Substitui o "#" pelo link real vindo do apps.json
+                    btnDownload.href = app.download_url;
+                }
+            })
+            .catch(error => console.error("Erro ao carregar o link de download:", error));
+    }
 });
