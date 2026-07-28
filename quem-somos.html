@@ -10,13 +10,106 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── CTA de contratação ── */
+    .cta-contato {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      border-radius: 12px;
+      padding: 40px 32px;
+      text-align: center;
+      border: 1px solid #2a2a2a;
+      margin-top: 8px;
+    }
+
+    .cta-contato h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--primary);
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .cta-contato p {
+      color: #cfcfcf;
+      font-size: 15px;
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto 28px auto;
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      max-width: 540px;
+      margin: 0 auto 32px auto;
+      text-align: left;
+    }
+
+    .cta-item {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .cta-item .cta-icon {
+      font-size: 22px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .cta-item strong {
+      display: block;
+      font-size: 13px;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .cta-item span {
+      font-size: 12px;
+      color: #888;
+      line-height: 1.5;
+    }
+
+    .cta-btn-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all .25s ease;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(0,230,118,.08);
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 600px) {
+      .cta-grid { grid-template-columns: 1fr; }
+      .cta-contato { padding: 28px 20px; }
+    }
+  </style>
 </head>
 
 <body>
 
   <header class="hero" data-aos="fade-down">
     <h1><i class="fa-solid fa-user"></i> Sobre o Projeto</h1>
-    
     <nav id="main-nav"></nav>
   </header>
 
@@ -62,7 +155,7 @@
         na gestão organizada de clientes e informações.
       </p>
       <p>
-        O sistema foi projetado para ser robusto e seguro, oferecendo recursos como gestão de registros, 
+        O sistema foi projetado para ser robusto e seguro, oferecendo recursos como gestão de registros,
         níveis de acesso e backup inteligente, transformando tarefas administrativas em processos ágeis.
       </p>
     </section>
@@ -94,6 +187,46 @@
       </p>
     </section>
 
+    <!-- ── NOVA SEÇÃO: CTA de contratação ── -->
+    <section class="section" data-aos="fade-up">
+      <div class="cta-contato">
+        <h2><i class="fa-solid fa-handshake"></i> Vamos trabalhar juntos?</h2>
+        <p>
+          Se você tem um processo repetitivo, um fluxo de trabalho que poderia ser automatizado
+          ou uma ideia que precisa sair do papel — posso ajudar. Respondo em até 24 horas.
+        </p>
+
+        <div class="cta-grid">
+          <div class="cta-item">
+            <span class="cta-icon">⚡</span>
+            <strong>Automações</strong>
+            <span>Bots, integrações e fluxos automáticos</span>
+          </div>
+          <div class="cta-item">
+            <span class="cta-icon">🖥️</span>
+            <strong>Sistemas Desktop</strong>
+            <span>Aplicações Python para Windows</span>
+          </div>
+          <div class="cta-item">
+            <span class="cta-icon">🔗</span>
+            <strong>Integrações</strong>
+            <span>APIs, webhooks e pipelines de dados</span>
+          </div>
+        </div>
+
+        <div class="cta-btn-row">
+          <a class="download-btn" href="discovery.html">
+            <i class="fa-solid fa-clipboard-list"></i>
+            Iniciar levantamento
+          </a>
+          <a class="btn-secondary" href="mailto:gustavoduran22@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            Enviar e-mail direto
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer data-aos="fade-up"></footer>
@@ -101,10 +234,7 @@
   <script src="components.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 800,
-      once: true
-    });
+    AOS.init({ duration: 800, once: true });
   </script>
 
 </body>
