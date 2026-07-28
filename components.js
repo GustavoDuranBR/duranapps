@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Renderiza APENAS o Menu (onde houver a tag <nav id="main-nav">)
+    // 1. Renderiza o Menu (onde houver <nav id="main-nav">)
     const nav = document.getElementById("main-nav");
     if (nav) {
         nav.innerHTML = `
@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         footer.innerHTML = `<p>© 2026 Gustavo Duran — Duran Labs</p>`;
     }
 
-    // 3. Renderiza os Cards (apenas na página inicial)
+    // 3. Renderiza os Cards na home (apps-grid)
+    // Suporta apps sem download_url (ex: ferramentas web como Discovery Form)
     const appsGrid = document.getElementById("apps-grid");
     if (appsGrid) {
         fetch('apps.json')
@@ -29,17 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a class="download-btn" href="${app.detalhes_url}">
                             <i class="fa-solid fa-circle-info"></i> Ver detalhes
                         </a>
+                        ${app.download_url ? `
                         <br>
                         <a class="download-btn" href="${app.download_url}">
                             <i class="fa-solid fa-download"></i> Baixar
-                        </a>
+                        </a>` : ''}
                     </div>
                 `).join('');
             })
             .catch(err => console.error("Erro ao carregar apps.json: ", err));
     }
 
-    // 4. Sistema de Download Dinâmico (para as páginas individuais de cada aplicativo)
+    // 4. Download Dinâmico nas páginas individuais de cada app
     const btnDownload = document.getElementById("btn-download-dinamico");
     if (btnDownload) {
         const appId = btnDownload.getAttribute("data-app-id");
@@ -47,10 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch("apps.json")
             .then(response => response.json())
             .then(apps => {
-                // Procura o aplicativo correto pelo ID
                 const app = apps.find(a => a.id === appId);
                 if (app && app.download_url) {
-                    // Substitui o "#" pelo link real vindo do apps.json
                     btnDownload.href = app.download_url;
                 }
             })

@@ -43,5 +43,14 @@
     "descricao": "Ferramenta desenvolvida para ajudar e facilitar a vida dos jogadores de Path of Exile, oferecendo recursos como gerenciamento de stash, monitoramento de preços e alertas personalizados para itens desejados.",
     "detalhes_url": "poemarkethelper.html",
     "download_url": "https://github.com/GustavoDuranBR/duranapps/releases/download/v2.0.0/PoeMarketHelper_Setup.exe"
+  },
+  {
+    "id": "discovery",
+    "titulo": "Discovery Form",
+    "icone": "fa-clipboard-list",
+    "versao": "v1.0",
+    "descricao": "Formulário de levantamento de requisitos para automação. Mapeia modelo de negócio, dores operacionais, perfil técnico e orçamento — e gera um relatório de prioridades com sugestão de MVP.",
+    "detalhes_url": "discovery.html",
+    "download_url": null
   }
 ]
